@@ -23,8 +23,8 @@ def test_circle():
 
 def test_random_list():
     l = [random.randint(1, 100) for i in range(10)]
-    assert len(l) == 10
     list.sort(l)
+    assert len(l) == 10
     assert l[0] < l[-1]
 
 def test_unique_elements():
